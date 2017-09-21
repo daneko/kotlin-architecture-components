@@ -19,8 +19,8 @@ ext.arch_version = "1.0.0-alpha5"
 ext.support_version = "25.4.0"
 ext.dagger_version = "2.11"
 ext.moshi_version = "1.5.0"
-ext.retrofit_version = "2.2.0"
-ext.okhttp_version = "3.7.0"
+ext.retrofit_version = "2.3.0"
+ext.okhttp_version = "3.9.0"
 
 allprojects {
     repositories {
