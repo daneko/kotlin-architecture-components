@@ -1,9 +1,6 @@
 package jp.satorufujiwara.kotlin.ui.main
 
-import android.arch.lifecycle.LifecycleRegistry
-import android.arch.lifecycle.LifecycleRegistryOwner
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.lifecycle.ViewModelProviders
+import android.arch.lifecycle.*
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -21,7 +18,7 @@ import jp.satorufujiwara.kotlin.ui.app.UserViewModel
 import jp.satorufujiwara.kotlin.util.ext.observe
 import javax.inject.Inject
 
-class MainFragment : Fragment(), LifecycleRegistryOwner, Injectable {
+class MainFragment : Fragment(), LifecycleOwner, Injectable {
 
   @Inject lateinit var viewModelFactory: ViewModelProvider.Factory
   @Inject lateinit var userViewModel: UserViewModel
