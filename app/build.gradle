@@ -41,9 +41,15 @@ dependencies {
     kapt 'com.android.databinding:compiler:2.3.3'
 
     // architecture components
-    implementation "android.arch.lifecycle:runtime:$arch_version"
-    implementation "android.arch.lifecycle:extensions:$arch_version"
-    implementation "android.arch.lifecycle:reactivestreams:$arch_version"
+    implementation("android.arch.lifecycle:runtime:$arch_version"){
+        exclude group: "com.android.support"
+    }
+    implementation("android.arch.lifecycle:extensions:$arch_version"){
+        exclude group: "com.android.support"
+    }
+    implementation("android.arch.lifecycle:reactivestreams:$arch_version"){
+        exclude group: "com.android.support"
+    }
     kapt "android.arch.lifecycle:compiler:$arch_version"
 
     // dagger

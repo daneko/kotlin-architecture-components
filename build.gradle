@@ -15,9 +15,8 @@ buildscript {
     }
 }
 
-ext.arch_version = "1.0.0-alpha5"
-// 26.1.0にすると、なぜか android.arch.core.util.Function<I, O> の参照がおかしくなるの最高にロック
-ext.support_version = "26.0.2"
+ext.arch_version = "1.0.0-alpha9-1"
+ext.support_version = "26.1.0"
 ext.dagger_version = "2.11"
 ext.moshi_version = "1.5.0"
 ext.retrofit_version = "2.3.0"
